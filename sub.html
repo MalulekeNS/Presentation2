@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Software Platform - OpenStack & CSIR</title>
+   <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; background-image: url('hero.jpg');color: #bec4c4; }
+        h1, h2 { color: gold; }
+        .container { width: 90%; margin: auto; }
+        .section { margin: 20px 0; padding: 20px; background: #070912; border-radius: 5px; }
+        .graphic { text-align: center; }
+        .footer { text-align: center; padding: 20px; font-size: 0.9em; color: black; }
+        img { width: 80%; max-width: 600px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Agricultural Software: Infrastructure Support</h1>
+        <p>Leveraging OpenStack & Ubuntu Linux | Gratitude to CSIR</p>
+    </div>
+
+    <div class="navbar">
+        <a href="#importance">Importance of OpenStack</a>
+        <a href="#advantages">Python Compatibility</a>
+        <a href="#gratitude">Appreciation to CSIR</a>
+    </div>
+
+    <!-- Container for Sections -->
+    <div class="container">
+        <!-- Section 1: Importance of OpenStack for Agriculture -->
+        <div class="feature-card" id="importance">
+            <h3>Why OpenStack & Ubuntu Linux?</h3>
+            <p>OpenStack on Ubuntu Linux offers a scalable, secure, and adaptable cloud infrastructure ideal for processing agricultural data in real time, optimizing resources for agricultural solutions, and supporting data analysis for sustainable crop management.</p>
+            <div class="button-container">
+                <div class="button" onclick="prevImage()">Previous</div>
+                <div class="button" onclick="nextImage()">Next</div>
+            </div>
+        </div>
+
+        <!-- Section 2: Advantages for Python Applications -->
+        <div class="feature-card" id="advantages">
+            <h3>Advantages for Python Applications</h3>
+            <p>Using OpenStack’s APIs, our Python-based software app integrates seamlessly with cloud services for effective soil imaging and crop recommendations, enhancing the application’s efficiency, scalability, and usability in field data analysis.</p>
+            <div class="button-container">
+                <div class="button" onclick="prevImage()">Previous</div>
+                <div class="button" onclick="nextImage()">Next</div>
+            </div>
+        </div>
+
+        <!-- Section 3: Gratitude and Acknowledgment to CSIR -->
+        <div class="feature-card" id="gratitude">
+            <h3>Special Thanks to CSIR</h3>
+            <p>We express our gratitude to the Council for Scientific and Industrial Research (CSIR) for providing OpenStack access, enabling us to accelerate project development, fostering advancements in agriculture, and empowering our mission in sustainable farming practices.</p>
+            <div class="button-container">
+                <div class="button" onclick="prevImage()">Previous</div>
+                <div class="button" onclick="nextImage()">Next</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const images = ["image1.jpg", "image2.jpg", "image3.jpg"];
+        let currentIndex = 0;
+
+        function displayImage(index) {
+            document.querySelectorAll('.feature-card img').forEach((img, i) => {
+                img.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            displayImage(currentIndex);
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            displayImage(currentIndex);
+        }
+    </script>
+
+</body>
+</html>

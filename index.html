@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Analysis</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; background-image: url('hero.jpg');color: #bec4c4; }
+        h1, h2 { color: gold; }
+        .container { width: 90%; margin: auto; }
+        .section { margin: 20px 0; padding: 20px; background: #070912; border-radius: 5px; }
+        .graphic { text-align: center; }
+        .footer { text-align: center; padding: 20px; font-size: 0.9em; color: black; }
+        img { width: 80%; max-width: 600px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Title Slide -->
+        <div class="section" style="text-align:center;">
+            <h1>Agricultural Software App: Soil Image Processing Analysis.</h1>
+            <h2>OpenStack | Linux (Ubuntu)</h2>
+            <div class="graphic" id="imageContainer">
+                    <img src="logo-1.png" alt="Company Image 1" id="companyImage" style="width: 150px;">
+                    <p>Powered by Innobiz Group</p>
+                </div>
+        </div>
+
+        <!-- "Our Company" Section with Rotating Images -->
+        <div class="section" style="text-align:center;">
+    <h1 style="color: gold;">Our Company</h1>
+    <h2 style="color: gold;">We are a private for profit but purpose and impact driven organization. We are a South African enterprise (2020/03111/07) that is inspired by innovation through science, and technology (S&T) skills. We have exceptional talent in digital image processing and computer vision algorithm development.</h2>
+    <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+        <a href="https://malulekens.github.io/Innobiz-Group" style="text-decoration: none;">
+            <button style="background-color: blue; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 18px;">
+                Website
+            </button>
+        </a>
+    </div>
+</div>
+
+
+
+        <div class="section" style="text-align:center;">
+            <h1>Our Project</h1>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <!-- Left Sub-container with Heading and Buttons -->
+                <div>
+                    <button onclick="prevImage()">Previous</button>
+                </div>
+                <!-- Image Display Area -->
+                <div class="graphic" id="imageContainer">
+                    <img src="logo.png" alt="Company Image 1" id="companyImage" style="width: 300px;">
+                </div>
+                <!-- Right Sub-container with Button -->
+                <div>
+                    <button onclick="nextImage()">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 1: Importance of OpenStack for Agriculture -->
+        <div class="section">
+            <h2>Why OpenStack & Ubuntu Linux?</h2>
+            <p>OpenStack on Ubuntu provides scalable, secure cloud infrastructure ideal for processing agricultural data in real-time. With open-source flexibility, it helps tailor cloud services for efficient crop recommendations, optimizing agriculture techniques through data analytics.</p>
+            <div class="graphic">
+                <img src="1.png" alt="OpenStack Project Architecture">
+                <p>OpenStack Architecture on Ubuntu Linux for our Software Project</p>
+            </div>
+        </div>
+        
+        <!-- Section 2: Value of OpenStack for Python Applications -->
+        <div class="section">
+            <h2>Advantages for Python Applications</h2>
+            <p>Leveraging OpenStack's API capabilities, our Python-based software integrates smoothly with cloud resources, handling soil imaging and data analytics seamlessly. This infrastructure accelerates development, testing, and deployment processes.</p>
+            <div class="graphic">
+                <img src="python.png" alt="Python integration with OpenStack">
+                <p>Python Integration with OpenStack for Our Software App Project</p>
+            </div>
+        </div>
+
+        <!-- Section 3: Gratitude and Acknowledgment to CSIR -->
+        <div class="section">
+            <h2>A Special Thanks to CSIR</h2>
+            <p>Our sincere gratitude goes to the Council for Scientific and Industrial Research (CSIR) for their generous support. By providing this OpenStack platform free of charge, CSIR has enabled the acceleration of our agricultural software project, empowering us to contribute positively to the field of sustainable agriculture.</p>
+            <div class="graphic">
+                <img src="csir.png" alt="CSIR Logo">
+                <p>Thank you CSIR, for your invaluable support!</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <b><p>Presentation by Lindokuhle Mdletshe: CEO | Powered by Innobiz Group | Soil Image Processing Analysis App</p></b>
+        </div>
+    </div>
+</body>
+</html>
